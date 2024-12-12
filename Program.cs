@@ -33,9 +33,22 @@ namespace ConsoleApp1
                 while (true)
                 {
                     if (sayi1 == sayi2)
-                    {
-                        Console.WriteLine("tebrikler dogru bildiniz ");
-                        break;
+                    { 
+                        if (deneme <= 5 )
+                        {
+                            Console.WriteLine("tebrikler oyunu" + { hak} + " deneme ile zor modda bitirdiniz");
+                            break
+                        }
+                        else if (deneme <=10)
+                        {
+                            Console.WriteLine("tebrikler oyunu " + { hak} + " deneme ile normal modda bitirdiniz");
+                            break;
+                        }
+                        else if (deneme > 10)
+                        {
+                             Console.WriteLine("tebrikler oyunu " + { hak} + " deneme ile normal modda bitirdiniz");
+                            break;
+                        }
                     }
                     else if (sayi2 > sayi1)
                     {
